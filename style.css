@@ -1,1 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.6;
+  max-width: 800px; /* Evita que o texto fique longo demais em telas grandes */
+  margin: 15px auto; /* Centraliza o bloco de texto na tela */
+}
+
+.galeria {
+  display: flex;
+  justify-content: center; /* Centraliza as imagens se sobrarem espaços */
+  flex-wrap: wrap;
+  gap: 20px; /* Controla o espaço entre as imagens de forma moderna */
+  margin-top: 30px;
+}
+
+.galeria img {
+  width: 200px;
+  aspect-ratio: 4 / 3; /* Garante a proporção perfeita de 200x150 sem achatar */
+  object-fit: cover;
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease; /* Prepara a imagem para uma animação suave */
+}
+
+/* Efeito opcional: a imagem aumenta levemente ao passar o mouse */
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
 
